@@ -1,0 +1,12 @@
+# Библиотеки и версии проекта «Хранитель Подземелья» (Node.js)
+# Точные версии — из package-lock.json после npm install.
+# Среда выполнения: Node.js 20 (образ node:20-bookworm-slim)
+
+@maxhub/max-bot-api  ^1.0.2   # официальный SDK MAX Bot API (platform-api2.max.ru)
+better-sqlite3       ^13.0.3  # SQLite (гильдии, события, боссы, XP)
+chrono-node          ^2.10.1  # парсинг дат на русском («завтра», «в четвервг») — chrono.ru
+dotenv               ^16.4.7  # переменные окружения (.env / -e BOT_TOKEN)
+
+# Системные требования Docker-образа:
+# - корневой сертификат Минцифры (russian_trusted_root_ca.pem) для TLS к platform-api2.max.ru
+# - volume для /app/data (база SQLite)

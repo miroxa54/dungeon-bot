@@ -1,0 +1,14 @@
+services:
+  dungeon-bot:
+    build: .
+    container_name: dungeon-bot
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - dungeon-data:/app/data
+    # Чтобы напоминания приходили в правильное локальное время:
+    environment:
+      - TZ=Asia/Novosibirsk
+
+volumes:
+  dungeon-data:

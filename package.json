@@ -1,0 +1,16 @@
+{
+  "name": "dungeon-bot",
+  "version": "1.0.0",
+  "description": "Хранитель Подземелья — бот-гильдия для школьного класса в MAX (Сферуме)",
+  "type": "module",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "@maxhub/max-bot-api": "^1.0.2",
+    "better-sqlite3": "^13.0.3",
+    "chrono-node": "^2.10.1",
+    "dotenv": "^16.4.7"
+  }
+}
