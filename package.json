@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@maxhub/max-bot-api": "^1.0.2",
-    "better-sqlite3": "^13.0.3",
     "chrono-node": "^2.10.1",
     "dotenv": "^16.4.7"
   }

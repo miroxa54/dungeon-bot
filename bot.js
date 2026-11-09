@@ -1,10 +1,10 @@
 import 'dotenv/config';
 import { Bot, Keyboard } from '@maxhub/max-bot-api';
-import Database from 'better-sqlite3';
+import { DatabaseSync } from 'node:sqlite';   // встроенная SQLite в Node 24 — без родных модулей
 import * as chrono from 'chrono-node';
 
 const bot = new Bot(process.env.BOT_TOKEN);
-const db = new Database(process.env.DB_PATH || 'data.db');
+const db = new DatabaseSync(process.env.DB_PATH || 'data.db');
 
 // ==================== БД ====================
 db.exec(`
